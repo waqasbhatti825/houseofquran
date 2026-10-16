@@ -1,0 +1,1233 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta name="description"
+    content="Learn the Quran online with Rauf Sajjad, Quran teacher and Islamic educator. Explore Quran recitation, Tajweed and guided learning, and enquire about a trial class." />
+  <meta name="author" content="Rauf Sajjad" />
+  <meta name="theme-color" content="#0f2e24" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Rauf Sajjad — Quran Teacher &amp; Islamic Educator" />
+  <meta property="og:description"
+    content="Personalised online Quran learning, recitation and Tajweed with Rauf Sajjad." />
+  <meta property="og:site_name" content="Rauf Sajjad" />
+  <meta property="og:image" content="imgs/rauf.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Rauf Sajjad — Quran Teacher &amp; Islamic Educator" />
+  <meta name="twitter:description" content="Explore online Quran learning, recitation and Tajweed with Rauf Sajjad." />
+  <meta name="twitter:image" content="imgs/rauf.png" />
+  <title>Rauf Sajjad — Quran Teacher &amp; Islamic Educator</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&display=swap"
+    rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="gsap-ready">
+
+  <!-- READING PROGRESS -->
+  <div class="reading-progress" id="reading-progress" aria-hidden="true"></div>
+
+  <!-- PRELOADER -->
+  <div id="site-preloader" role="status" aria-label="Loading website">
+    <div class="preloader-inner">
+      <div class="preloader-mark">
+        <img src="imgs/rauf.png" alt="Rauf Sajjad" />
+      </div>
+      <h2 class="preloader-title">Rauf Sajjad</h2>
+      <p class="preloader-sub">Quran Educator</p>
+      <div class="preloader-track">
+        <span class="preloader-progress" id="preloader-progress"></span>
+      </div>
+      <p class="preloader-arabic" id="preloader-arabic" lang="ar" aria-hidden="true">بِسْمِ اللَّهِ الرَّحْمَٰنِ
+        الرَّحِيمِ</p>
+    </div>
+  </div>
+
+  <!-- PAGE TRANSITION -->
+  <div id="page-transition" aria-hidden="true">
+    <div class="transition-inner">
+      <span class="transition-label">Rauf Sajjad</span>
+      <span class="transition-sub">Quran Educator</span>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#home" data-path="home" data-anim="brand">
+        <img alt="Rauf Sajjad logo" src="imgs/rauf.png" />
+        <div class="brand-text">
+          <span class="brand-name">Rauf Sajjad</span>
+          <span class="brand-sub">Islamic Educator</span>
+        </div>
+      </a>
+      <nav class="site-navigation" id="desktop-nav" aria-label="Primary">
+        <a href="#home" data-path="home" aria-current="page">Home</a>
+        <a href="#about" data-path="about">About</a>
+        <a href="#services" data-path="services">Services</a>
+        <a href="#experience" data-path="experience">Experience</a>
+        <a href="#qualifications" data-path="qualifications">Qualifications</a>
+        <a href="#gallery" data-path="gallery">Gallery</a>
+        <a href="#booking-form" data-path="contact">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <a class="btn-trial" href="#booking-form" data-path="trial-session">Book a Free Trial</a>
+        <button id="mobile-menu-toggle" class="mobile-toggle" type="button" aria-label="Open navigation"
+          aria-expanded="false" aria-controls="mobile-menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <img class="profile-chip" alt="Profile" src="imgs/rauf.png" />
+      </div>
+    </div>
+    <nav id="mobile-menu" aria-label="Mobile navigation">
+      <div class="mobile-menu-grid">
+        <a href="#home" data-path="home" aria-current="page">Home</a>
+        <a href="#about" data-path="about">About</a>
+        <a href="#services" data-path="services">Services</a>
+        <a href="#experience" data-path="experience">Experience</a>
+        <a href="#qualifications" data-path="qualifications">Education</a>
+        <a href="#gallery" data-path="gallery">Gallery</a>
+        <a href="#booking-form" data-path="contact">Contact</a>
+        <a href="#booking-form" class="trial-link" data-path="trial-session">Book a Free Trial →</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="hero-pattern">
+        <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <defs>
+            <pattern id="arch-pattern" width="80" height="80" patternUnits="userSpaceOnUse">
+              <path d="M 40,0 L 80,40 L 40,80 L 0,40 Z" fill="none" stroke="#ba9b5c" stroke-opacity="0.15"
+                stroke-width="0.5"></path>
+              <circle cx="40" cy="40" fill="#ba9b5c" fill-opacity="0.25" r="1.5"></circle>
+            </pattern>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#arch-pattern)"></rect>
+        </svg>
+      </div>
+      <div class="container">
+        <div class="hero-grid">
+          <div>
+            <div class="hero-badge" data-hero="badge">
+              <span class="hero-badge-dot"></span>
+              <span class="hero-badge-text">Certified Quran Teacher • Ijazah &amp; Sanad</span>
+            </div>
+            <h1 class="hero-title" data-hero="title">
+              Guiding Hearts Through the <em>Light of the Quran</em>
+            </h1>
+            <p class="hero-copy" data-hero="copy">
+              Learn to read, recite, and understand the Holy Quran with personalized guidance, structured lessons, and a
+              supportive, traditional yet modern learning environment — from a certified teacher with Ijazah and Sanad.
+            </p>
+            <div class="hero-ctas" data-hero="ctas">
+              <a class="btn-primary" href="#booking-form" data-path="trial-session">
+                <span>Book a Free Trial</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+              <a class="btn-secondary" href="#services" data-path="services">
+                <span>Explore My Teaching</span>
+                <i class="fa-solid fa-book-open"></i>
+              </a>
+            </div>
+            <div class="hero-stats" data-hero="stats">
+              <div>
+                <span class="stat-num" data-count="5" data-suffix="+">0</span>
+                <span class="stat-label">Years Teaching</span>
+              </div>
+              <div>
+                <span class="stat-num" data-count="100" data-suffix="+">0</span>
+                <span class="stat-label">Students Taught</span>
+              </div>
+              <div>
+                <span class="stat-num" data-count="4" data-suffix="">0</span>
+                <span class="stat-label">Ijazah &amp; Credentials</span>
+              </div>
+            </div>
+          </div>
+          <div class="hero-portrait-wrap" data-hero="portrait">
+            <div class="hero-halo-1"></div>
+            <div class="hero-halo-2"></div>
+            <div class="hero-portrait">
+              <img alt="Rauf Sajjad portrait" src="imgs/rauf.png" />
+              <div class="hero-portrait-scrim"></div>
+              <div class="hero-portrait-badge">
+                <div class="hero-badge-icon">
+                  <i class="fa-solid fa-circle-check"></i>
+                </div>
+                <div class="hero-portrait-badge-text">
+                  <small>Personalized Instruction</small>
+                  <strong>1-on-1 Online Quran Learning</strong>
+                </div>
+              </div>
+            </div>
+            <div class="hero-stamp">
+              <div class="hero-stamp-inner">
+                <i class="fa-solid fa-book-quran"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTRO CARDS -->
+    <section class="intro-section">
+      <div class="container">
+        <div class="intro-grid" data-stagger>
+          <div class="intro-card" data-stagger-item>
+            <div class="intro-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div>
+              <h3>Certified Ijazah</h3>
+              <p>Formal Ijazah with connected Sanad from Al Quran Academy (2023).</p>
+            </div>
+          </div>
+          <div class="intro-card" data-stagger-item>
+            <div class="intro-icon"><i class="fa-solid fa-sliders"></i></div>
+            <div>
+              <h3>Tailored Curriculum</h3>
+              <p>Paced precisely to your age, schedule, and current fluency.</p>
+            </div>
+          </div>
+          <div class="intro-card" data-stagger-item>
+            <div class="intro-icon"><i class="fa-regular fa-clock"></i></div>
+            <div>
+              <h3>Flexible Timings</h3>
+              <p>Morning, evening, and weekend slots across US, UK &amp; Gulf.</p>
+            </div>
+          </div>
+          <div class="intro-card" data-stagger-item>
+            <div class="intro-icon"><i class="fa-solid fa-laptop"></i></div>
+            <div>
+              <h3>Live 1-to-1 Video</h3>
+              <p>Interactive recitation via Zoom or WhatsApp video call.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <div class="about-grid">
+          <div data-about="left">
+            <div class="about-vignette">
+              <img alt="Quran on a wooden rehal desk" src="imgs/rauf.png" />
+              <div class="about-vignette-scrim"></div>
+              <div class="about-vignette-caption">
+                <small>Teaching Philosophy</small>
+                <span class="arabic">خَيْرُكُمْ مَنْ تَعَلَّمَ الْقُرْآنَ وَعَلَّمَهُ</span>
+                <span class="translation">"The best among you are those who learn the Quran and teach it."</span>
+              </div>
+            </div>
+            <div class="about-quote">
+              <i class="fa-solid fa-quote-left quote-icon"></i>
+              <p>"My aim is to help each learner build a clear, steady, and meaningful connection with the Quran."</p>
+              <div class="about-quote-author"><span>Rauf Sajjad</span></div>
+            </div>
+          </div>
+          <div data-about="right">
+            <span class="section-eyebrow reveal-line"><span>About the Educator</span></span>
+            <h2 class="section-heading reveal-line"><span>A Journey Rooted in the Quran</span></h2>
+            <div class="about-narrative">
+              <p data-fade>Rauf Sajjad is a certified Quran teacher with <strong>5+ years of teaching
+                  experience</strong>
+                and <strong>100+ students taught</strong> across USA, UK, and Gulf countries. He began his Quranic path
+                at an early age, completing memorization of the Holy Quran (Hifz) under rigorous scholarly supervision
+                and receiving formal <strong>Ijazah certification with connected Sanad</strong> from Al Quran Academy.
+              </p>
+              <p data-fade>Over the years, he has merged traditional pedagogical rigor with contemporary empathetic
+                mentorship. He believes every student approaches the Quran with distinct natural rhythms, verbal
+                cadence, and spiritual motivations — requiring not rigid conformity, but thoughtful nurturing, clear
+                phonetic breakdowns, and consistent encouragement.</p>
+            </div>
+            <div class="about-details" data-stagger>
+              <div class="about-detail" data-stagger-item>
+                <i class="fa-solid fa-language"></i>
+                <div><span class="about-detail-label">Instruction Languages</span><span
+                    class="about-detail-value">English / Urdu</span></div>
+              </div>
+              <div class="about-detail" data-stagger-item>
+                <i class="fa-solid fa-users"></i>
+                <div><span class="about-detail-label">Age Groups Welcomed</span><span class="about-detail-value">Ages 6+
+                    (Children, Teens &amp; Adults)</span></div>
+              </div>
+              <div class="about-detail" data-stagger-item>
+                <i class="fa-solid fa-globe"></i>
+                <div><span class="about-detail-label">Global Availability</span><span class="about-detail-value">USA,
+                    UK, Europe &amp; Gulf timezones</span></div>
+              </div>
+              <div class="about-detail" data-stagger-item>
+                <i class="fa-solid fa-shield-halved"></i>
+                <div><span class="about-detail-label">Teaching Methodology</span><span class="about-detail-value">Zoom
+                    &amp; WhatsApp Video Call</span></div>
+              </div>
+            </div>
+            <a class="about-link" href="#qualifications" data-path="qualifications" data-fade>
+              <span>View Academic Credentials &amp; Ijazah Chain</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="services-section bg-surface-alt">
+      <div class="container">
+        <div class="section-panel">
+          <span class="section-eyebrow reveal-line"><span>Curriculum Catalog</span></span>
+          <h2 class="section-heading reveal-line"><span>Teaching Designed Around Every Learner</span></h2>
+          <p class="section-lead" data-fade>Structured learning paths designed to support each student's individual
+            Quran learning journey, from foundational letter articulation to formal certification.</p>
+        </div>
+        <div class="services-grid" data-stagger>
+          <div class="service-card" data-stagger-item>
+            <div>
+              <div class="service-header">
+                <div class="service-icon"><i class="fa-solid fa-book-open"></i></div><span class="service-tag">Beginner
+                  to Fluent</span>
+              </div>
+              <h3>Quran Reading &amp; Fluency</h3>
+              <p>Master the Arabic letters, diacritics (Harakat), joint letter recognition, and gradual transition into
+                smooth, unhesitant recitation.</p>
+            </div>
+            <div class="service-footer"><small>Suitable for: All Ages</small><a href="#booking-form"
+                data-path="trial-session">Enroll <i class="fa-solid fa-chevron-right"></i></a></div>
+          </div>
+          <div class="service-card" data-stagger-item>
+            <div>
+              <div class="service-header">
+                <div class="service-icon"><i class="fa-solid fa-spell-check"></i></div><span
+                  class="service-tag gold">Foundation</span>
+              </div>
+              <h3>Noorani Qaida</h3>
+              <p>The premier classical method for absolute beginners. Systematically develops exact Makharij, phonetic
+                clarity, and correct vocal tone.</p>
+            </div>
+            <div class="service-footer"><small>Suitable for: Children &amp; Starters</small><a href="#booking-form"
+                data-path="trial-session">Enroll <i class="fa-solid fa-chevron-right"></i></a></div>
+          </div>
+          <div class="service-card" data-stagger-item>
+            <div>
+              <div class="service-header">
+                <div class="service-icon"><i class="fa-solid fa-microphone-lines"></i></div><span
+                  class="service-tag tertiary">Core Mastery</span>
+              </div>
+              <h3>Tajweed Mastery</h3>
+              <p>In-depth theoretical and practical rules: Noon and Meem Sakinah, Madd rules, Waqf &amp; Ibtida, and
+                subtle phonetic refinement.</p>
+            </div>
+            <div class="service-footer"><small>Suitable for: Intermediate / Advanced</small><a href="#booking-form"
+                data-path="trial-session">Enroll <i class="fa-solid fa-chevron-right"></i></a></div>
+          </div>
+          <div class="service-card" data-stagger-item>
+            <div>
+              <div class="service-header">
+                <div class="service-icon"><i class="fa-solid fa-brain"></i></div><span class="service-tag">Full or
+                  Partial</span>
+              </div>
+              <h3>Quran Memorization (Hifz)</h3>
+              <p>Structured memorization pacing with disciplined revision schedules (Sabqi &amp; Manzil). Retain verses
+                permanently without burnout.</p>
+            </div>
+            <div class="service-footer"><small>Suitable for: Dedicated Learners</small><a href="#booking-form"
+                data-path="trial-session">Enroll <i class="fa-solid fa-chevron-right"></i></a></div>
+          </div>
+          <div class="service-card" data-stagger-item>
+            <div>
+              <div class="service-header">
+                <div class="service-icon"><i class="fa-solid fa-book-quran"></i></div><span
+                  class="service-tag">Comprehension</span>
+              </div>
+              <h3>Quranic Arabic &amp; Meaning</h3>
+              <p>Unlock the vocabulary and linguistic syntax of the Quran. Grasp the direct meaning of frequent root
+                words.</p>
+            </div>
+            <div class="service-footer"><small>Suitable for: Teens &amp; Adults</small><a href="#booking-form"
+                data-path="trial-session">Enroll <i class="fa-solid fa-chevron-right"></i></a></div>
+          </div>
+          <div class="service-card" data-stagger-item>
+            <div>
+              <div class="service-header">
+                <div class="service-icon"><i class="fa-solid fa-hand-holding-heart"></i></div><span
+                  class="service-tag gold">Holistic</span>
+              </div>
+              <h3>Islamic Studies &amp; Adab</h3>
+              <p>Foundational Islamic theology ('Aqeedah), daily Duas, Sunnah manners, and stories of the Prophets woven
+                into Quran sessions.</p>
+            </div>
+            <div class="service-footer"><small>Suitable for: Young Students</small><a href="#booking-form"
+                data-path="trial-session">Enroll <i class="fa-solid fa-chevron-right"></i></a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- APPROACH -->
+    <section class="about-section">
+      <div class="container">
+        <div class="approach-header">
+          <span class="section-eyebrow reveal-line"><span>Pedagogical Framework</span></span>
+          <h2 class="section-heading reveal-line"><span>A Thoughtful Approach to Learning</span></h2>
+          <p class="section-lead" data-fade>A systematic, four-phase pathway tailored to move the learner from
+            foundational recognition to refined mastery.</p>
+        </div>
+        <div class="approach-grid" data-stagger>
+          <div class="approach-card" data-stagger-item>
+            <div class="approach-top"><span class="approach-num">01</span><i class="fa-solid fa-chart-line"></i></div>
+            <h3>Understand</h3>
+            <p>Comprehensive initial diagnostic assessing current Arabic articulation, letter familiarity, rhythm, and
+              personal milestones.</p>
+          </div>
+          <div class="approach-card" data-stagger-item>
+            <div class="approach-top"><span class="approach-num">02</span><i class="fa-solid fa-calendar-check"></i>
+            </div>
+            <h3>Personalize</h3>
+            <p>Formulating an individual lesson blueprint — optimal weekly lesson frequency, duration, and home
+              recitation routines.</p>
+          </div>
+          <div class="approach-card" data-stagger-item>
+            <div class="approach-top"><span class="approach-num">03</span><i class="fa-solid fa-microphone"></i></div>
+            <h3>Practice</h3>
+            <p>Live interactive 1-to-1 reading. Immediate gentle correction of Makharij, audio demonstration, and
+              rhythmic talaqqi.</p>
+          </div>
+          <div class="approach-card" data-stagger-item>
+            <div class="approach-top"><span class="approach-num">04</span><i class="fa-solid fa-arrow-trend-up"></i>
+            </div>
+            <h3>Progress</h3>
+            <p>Bi-weekly milestone evaluations, detailed progress logs, audio playback comparisons, and graduation
+              toward higher surahs.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="services-section bg-surface-alt">
+      <div class="container">
+        <div class="experience-grid">
+          <div data-experience="intro">
+            <span class="section-eyebrow reveal-line"><span>Teaching History</span></span>
+            <h2 class="section-heading reveal-line"><span>Experience That Builds Confidence</span></h2>
+            <p class="section-lead" data-fade>Over 5 years of dedicated Quran teaching with a proven record of student
+              success across three continents.</p>
+            <div class="experience-intro-card" data-fade>
+              <div class="experience-intro-card-head">
+                <i class="fa-solid fa-clock-rotate-left"></i>
+                <strong>Total Service Record</strong>
+              </div>
+              <p><strong>5+ years</strong> of Quran teaching with <strong>100+ students</strong> across USA, UK, and
+                Gulf countries. Certified with formal <strong>Ijazah &amp; Sanad chain</strong> from Al Quran Academy
+                (March 2023).</p>
+            </div>
+          </div>
+          <div class="timeline" data-timeline>
+            <div class="timeline-item" data-timeline-item>
+              <div class="timeline-node"></div>
+              <div class="timeline-line" data-timeline-line></div>
+              <div class="timeline-card">
+                <div class="timeline-meta"><span class="timeline-date">2023 – Present</span><span
+                    class="timeline-tag">Online 1-on-1</span></div>
+                <h3>Senior Quran Teacher &amp; Hifz Instructor</h3>
+                <div class="timeline-org">Self-Employed • Global Online (Zoom / WhatsApp)</div>
+                <p>Teaching Tajweed, Hifz, Noorani Qaida, and Quranic Arabic to 100+ students across USA, UK, and Gulf
+                  countries.</p>
+              </div>
+            </div>
+            <div class="timeline-item" data-timeline-item>
+              <div class="timeline-node"></div>
+              <div class="timeline-line" data-timeline-line></div>
+              <div class="timeline-card">
+                <div class="timeline-meta"><span class="timeline-date">2021 – 2023</span><span
+                    class="timeline-tag gray">Online</span></div>
+                <h3>Quran &amp; Tajweed Teacher</h3>
+                <div class="timeline-org">Al Quran Academy • Remote</div>
+                <p>Completed advanced Tajweed certification and received formal Ijazah with connected Sanad chain (March
+                  2023).</p>
+              </div>
+            </div>
+            <div class="timeline-item" data-timeline-item>
+              <div class="timeline-node"></div>
+              <div class="timeline-card">
+                <div class="timeline-meta"><span class="timeline-date">2020 – 2021</span><span
+                    class="timeline-tag gray">In-person</span></div>
+                <h3>Junior Quran Teacher</h3>
+                <div class="timeline-org">Local Masjid &amp; Islamic Center • [City]</div>
+                <p>Began formal Quran teaching career while completing Hifz memorization. Assisted senior Qaris with
+                  Tajweed instruction.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUALIFICATIONS -->
+    <section id="qualifications" class="about-section">
+      <div class="container">
+        <div class="section-panel">
+          <span class="section-eyebrow reveal-line"><span>Scholarly Foundations</span></span>
+          <h2 class="section-heading reveal-line"><span>Knowledge Built on Learning</span></h2>
+          <p class="section-lead" data-fade>Verified academic and Quranic qualifications earned through years of
+            dedicated study and formal certification.</p>
+        </div>
+
+        <div class="qualifications-grid" data-stagger>
+
+          <!-- 1. Ijazah Certificate — sanat.png (spans 2 rows) -->
+          <div class="qual-card qual-card-image" data-stagger-item>
+            <div class="qual-image-wrap">
+              <img src="imgs/sanat.png" alt="Ijazah Certificate — Al Quran Academy" />
+              <div class="qual-image-badge">
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Verified</span>
+              </div>
+            </div>
+            <div class="qual-card-body">
+              <div class="qual-top">
+                <div class="qual-icon"><i class="fa-solid fa-award"></i></div>
+                <span class="qual-arabic">إجازة بالسند</span>
+              </div>
+              <span class="qual-eyebrow">Ijazah with Sanad Chain</span>
+              <h3>Ijazah Certificate — Al Quran Academy</h3>
+              <p>Formal certification of Quranic recitation with connected chain of transmission (Sanad) reaching back
+                through classical scholars.</p>
+              <div class="qual-footer">
+                <span>Issued by: <strong>Al Quran Academy</strong></span>
+                <strong>26 March 2023</strong>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Advanced Tajweed -->
+          <div class="qual-card" data-stagger-item>
+            <div>
+              <div class="qual-top">
+                <div class="qual-icon"><i class="fa-solid fa-circle-check"></i></div>
+                <span class="qual-arabic"
+                  style="font-family:'Manrope';font-size:.7rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;">Advanced</span>
+              </div>
+              <span class="qual-eyebrow">Tajweed Certification</span>
+              <h3>Advanced Tajweed &amp; Qira'at Course</h3>
+              <p>Completed in-depth theoretical and practical training in Tajweed rules — Noon &amp; Meem Sakinah, Madd,
+                Waqf &amp; Ibtida, and precise Makharij.</p>
+            </div>
+            <div class="qual-footer">
+              <span>Issuing Institution: <strong>Al Quran Academy</strong></span>
+              <strong>Certified</strong>
+            </div>
+          </div>
+
+          <!-- 3. Online Pedagogy -->
+          <div class="qual-card" data-stagger-item>
+            <div>
+              <div class="qual-top">
+                <div class="qual-icon"><i class="fa-solid fa-brain"></i></div>
+                <span class="qual-arabic"
+                  style="font-family:'Manrope';font-size:.7rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;">Pedagogy</span>
+              </div>
+              <span class="qual-eyebrow">Online Teaching</span>
+              <h3>Online Quran Pedagogy Training</h3>
+              <p>Trained in modern online teaching tools — Zoom classroom management, digital Mushaf sharing, audio
+                feedback techniques, and structured remote learning plans.</p>
+            </div>
+            <div class="qual-footer">
+              <span>Format: <strong>Online Certification</strong></span>
+              <strong>Completed</strong>
+            </div>
+          </div>
+
+          <!-- 4. ijad.png FEATURED CARD (spans both columns) -->
+          <div class="qual-card qual-card-featured" data-stagger-item>
+            <div class="qual-image-wrap">
+              <img src="imgs/ijahazh.png" alt="Ijazah documentation — Al Quran Academy" />
+              <div class="qual-image-badge">
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Authentic Sanad</span>
+              </div>
+            </div>
+            <div class="qual-card-body">
+              <div class="qual-top">
+                <div class="qual-icon"><i class="fa-solid fa-scroll"></i></div>
+                <span class="qual-arabic">سند متصل</span>
+              </div>
+              <span class="qual-eyebrow">Ijazah Documentation</span>
+              <h3>Connected Sanad Chain — Al Quran Academy</h3>
+              <p>Complete documentation of the connected chain of transmission (Sanad) tracing back through generations
+                of classical Quranic scholars to the Prophet Muhammad ﷺ — authenticating the authority to teach and
+                transmit the Quran with Tajweed.</p>
+              <div class="qual-footer">
+                <span>Documented &amp; Verified by: <strong>Al Quran Academy</strong></span>
+                <strong>March 2023</strong>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- IJAZAH CEREMONY -->
+    <section class="services-section bg-surface-alt">
+      <div class="container">
+        <div class="about-grid" style="align-items:center;">
+          <div data-about="left">
+            <div class="about-vignette" style="aspect-ratio:4/3;">
+              <img alt="Ijazah Ceremony with distinguished scholars at Al Quran Academy" src="imgs/cermoney.png" />
+              <div class="about-vignette-scrim"></div>
+              <div class="about-vignette-caption">
+                <small>Ijazah Ceremony • 26 March 2023</small>
+                <span class="translation" style="font-size:.95rem;color:#fbfaf6;font-style:normal;">Honored to receive
+                  formal Ijazah certification in the presence of distinguished Quranic scholars and Mashayikh.</span>
+              </div>
+            </div>
+          </div>
+          <div data-about="right">
+            <span class="section-eyebrow reveal-line"><span>Scholarly Recognition</span></span>
+            <h2 class="section-heading reveal-line"><span>Certified with Sanad &amp; Ijazah</span></h2>
+            <div class="about-narrative">
+              <p data-fade>On <strong>26 March 2023</strong>, I was formally honored to receive my Ijazah certification
+                from <strong>Al Quran Academy</strong> in the presence of distinguished Quranic scholars and Mashayikh —
+                a moment of profound gratitude and spiritual milestone in my teaching journey.</p>
+              <p data-fade>This Ijazah carries a connected chain of transmission (Sanad) reaching back through
+                generations of classical Quranic scholars to the Prophet Muhammad ﷺ, certifying my authority to teach
+                and transmit the Quran with authentic Tajweed.</p>
+            </div>
+            <div class="about-details" data-stagger>
+              <div class="about-detail" data-stagger-item>
+                <i class="fa-solid fa-circle-check"></i>
+                <div><span class="about-detail-label">Certification Date</span><span class="about-detail-value">26 March
+                    2023</span></div>
+              </div>
+              <div class="about-detail" data-stagger-item>
+                <i class="fa-solid fa-award"></i>
+                <div><span class="about-detail-label">Issuing Institution</span><span class="about-detail-value">Al
+                    Quran Academy</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACHIEVEMENTS -->
+    <section id="achievements" class="about-section">
+      <div class="container">
+        <div class="section-panel">
+          <span class="section-eyebrow reveal-line"><span>Verified Recognition</span></span>
+          <h2 class="section-heading reveal-line"><span>Milestones of Dedication</span></h2>
+          <p class="section-lead" data-fade>Formal recognitions and celebrated milestones from the Quranic teaching
+            journey.</p>
+        </div>
+        <div class="achievements-grid">
+          <div class="ach-feature" data-stagger-item>
+            <div>
+              <div class="ach-feature-badge">
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Primary Scholarly Distinction</span>
+              </div>
+              <h3>Ijazah with Sanad — Al Quran Academy</h3>
+              <p>Formal Ijazah certification received in March 2023 in the presence of distinguished scholars. Certifies
+                authority to teach and transmit Quranic recitation with authentic Tajweed and connected chain of
+                transmission.</p>
+              <div class="ach-feature-info">
+                <div class="ach-info-block"><small>Conferred Authority</small><strong>Al Quran Academy</strong></div>
+                <div class="ach-info-block"><small>Sanad Lineage</small><strong>Connected Chain to the Prophet
+                    ﷺ</strong></div>
+              </div>
+            </div>
+            <div class="ach-verified">
+              <i class="fa-solid fa-shield-halved"></i>
+              <span>Certificate verified • Issued 26 March 2023</span>
+            </div>
+          </div>
+          <div class="ach-side" data-stagger>
+            <div class="ach-mini" data-stagger-item>
+              <div class="ach-mini-top"><span>Teaching Impact</span><span>100+ Students</span></div>
+              <h4>Global Student Community</h4>
+              <p>Taught 100+ students across USA, UK, Europe, and Gulf countries — children, teens, and adults.</p>
+            </div>
+            <div class="ach-mini" data-stagger-item>
+              <div class="ach-mini-top"><span>Experience</span><span>5+ Years</span></div>
+              <h4>Dedicated Teaching Career</h4>
+              <p>Over five years of continuous Quran teaching with proven student outcomes and parent satisfaction.</p>
+            </div>
+            <div class="ach-mini" data-stagger-item>
+              <div class="ach-mini-top"><span>Specialization</span><span>Ijazah Level</span></div>
+              <h4>Tajweed, Hifz &amp; Qaida</h4>
+              <p>Specialized instruction across Noorani Qaida, Tajweed mastery, Hifz memorization, and Quranic Arabic.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY — Pinterest -->
+    <section id="gallery" class="services-section bg-surface-alt">
+      <div class="container">
+        <div class="section-panel">
+          <span class="section-eyebrow reveal-line"><span>Recognition &amp; Achievements</span></span>
+          <h2 class="section-heading reveal-line"><span>Certificates, Awards &amp; Milestones</span></h2>
+          <p class="section-lead" data-fade>A curated collection of verified certificates, Ijazah documents, awards, and
+            memorable teaching milestones. Tap any card to view it larger.</p>
+        </div>
+
+        <div class="gallery-filters" role="tablist" aria-label="Gallery filters">
+          <button class="gallery-filter is-active" data-filter="all" type="button" role="tab"
+            aria-selected="true">All</button>
+          <button class="gallery-filter" data-filter="ijazah" type="button" role="tab"
+            aria-selected="false">Ijazah</button>
+          <button class="gallery-filter" data-filter="award" type="button" role="tab"
+            aria-selected="false">Awards</button>
+          <button class="gallery-filter" data-filter="certificate" type="button" role="tab"
+            aria-selected="false">Certificates</button>
+          <button class="gallery-filter" data-filter="competition" type="button" role="tab"
+            aria-selected="false">Competitions</button>
+        </div>
+
+        <div class="gallery-masonry" id="galleryMasonry">
+          <button class="gallery-pin" data-category="ijazah" data-lightbox-src="imgs/sanat.png"
+            data-lightbox-title="Ijazah Certificate — Al Quran Academy"
+            data-lightbox-meta="Ijazah & Sanad • March 2023">
+            <img src="imgs/sanat.png" alt="Ijazah Certificate from Al Quran Academy" loading="lazy" />
+            <span class="gallery-pin-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            <span class="gallery-pin-overlay">
+              <span class="gallery-pin-category">Ijazah</span>
+              <h4>Ijazah Certificate</h4>
+              <small>Al Quran Academy • 2023</small>
+            </span>
+          </button>
+
+          <button class="gallery-pin" data-category="ijazah" data-lightbox-src="imgs/cermoney.png"
+            data-lightbox-title="Ijazah Ceremony — Al Quran Academy"
+            data-lightbox-meta="Ijazah & Sanad • 26 March 2023">
+            <img src="imgs/cermoney.png" alt="Ijazah Ceremony with scholars" loading="lazy" />
+            <span class="gallery-pin-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            <span class="gallery-pin-overlay">
+              <span class="gallery-pin-category">Ijazah</span>
+              <h4>Ijazah Ceremony</h4>
+              <small>26 March 2023</small>
+            </span>
+          </button>
+
+          <button class="gallery-pin" data-category="ijazah" data-lightbox-src="imgs/ijad.png"
+            data-lightbox-title="Ijazah Documentation — Al Quran Academy" data-lightbox-meta="Ijazah & Sanad • 2023">
+            <img src="imgs/ijahazh.png" alt="Ijazah documentation" loading="lazy" />
+            <span class="gallery-pin-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            <span class="gallery-pin-overlay">
+              <span class="gallery-pin-category">Ijazah</span>
+              <h4>Sanad Documentation</h4>
+              <small>Al Quran Academy • 2023</small>
+            </span>
+          </button>
+
+          <button class="gallery-pin" data-category="award" data-lightbox-src="imgs/Achivement1.jpeg"
+            data-lightbox-title="Quran Competition Achievement" data-lightbox-meta="Award • 2022">
+            <img src="imgs/Achivement1.jpeg" alt="Quran Competition Achievement" loading="lazy" />
+            <span class="gallery-pin-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            <span class="gallery-pin-overlay">
+              <span class="gallery-pin-category">Award</span>
+              <h4>Quran Achievement</h4>
+              <small>Award • 2022</small>
+            </span>
+          </button>
+
+          <button class="gallery-pin" data-category="competition" data-lightbox-src="imgs/NaatComp.png"
+            data-lightbox-title="Naat Competition Award" data-lightbox-meta="Competition • 2022">
+            <img src="imgs/NaatComp.png" alt="Naat Competition Award" loading="lazy" />
+            <span class="gallery-pin-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            <span class="gallery-pin-overlay">
+              <span class="gallery-pin-category">Competition</span>
+              <h4>Naat Competition</h4>
+              <small>Award • 2022</small>
+            </span>
+          </button>
+
+          <button class="gallery-pin" data-category="competition" data-lightbox-src="imgs/natComp.png"
+            data-lightbox-title="National Quran Competition" data-lightbox-meta="Competition • 2023">
+            <img src="imgs/natComp.png" alt="National Quran Competition" loading="lazy" />
+            <span class="gallery-pin-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            <span class="gallery-pin-overlay">
+              <span class="gallery-pin-category">Competition</span>
+              <h4>National Competition</h4>
+              <small>2023</small>
+            </span>
+          </button>
+
+          <button class="gallery-pin" data-category="competition" data-lightbox-src="imgs/Qiraatcomp.png"
+            data-lightbox-title="Qira'at Competition Award" data-lightbox-meta="Competition • 2023">
+            <img src="imgs/Qiraatcomp.png" alt="Qira'at Competition Award" loading="lazy" />
+            <span class="gallery-pin-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            <span class="gallery-pin-overlay">
+              <span class="gallery-pin-category">Competition</span>
+              <h4>Qira'at Competition</h4>
+              <small>Award • 2023</small>
+            </span>
+          </button>
+
+          <button class="gallery-pin" data-category="certificate" data-lightbox-src="imgs/quiz.png"
+            data-lightbox-title="Student Quran Quiz Completion" data-lightbox-meta="Certificate • 2024">
+            <img src="imgs/quiz.png" alt="Student Quran Quiz Completion" loading="lazy" />
+            <span class="gallery-pin-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            <span class="gallery-pin-overlay">
+              <span class="gallery-pin-category">Certificate</span>
+              <h4>Quran Quiz Completion</h4>
+              <small>Student Milestone • 2024</small>
+            </span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- STUDENT SUCCESS SHOWCASE -->
+    <section class="about-section">
+      <div class="container">
+        <div class="section-panel">
+          <span class="section-eyebrow reveal-line"><span>Student Milestones</span></span>
+          <h2 class="section-heading reveal-line"><span>Celebrating Student Success</span></h2>
+          <p class="section-lead" data-fade>Every milestone matters. From first letters to Quran completion, each
+            student's journey is honored and celebrated with genuine pride.</p>
+        </div>
+        <div class="achievements-grid">
+          <div class="showcase-image" data-stagger-item>
+            <img src="imgs/quiz.png" alt="Student Quran Quiz Completion — Alhamdulillah" />
+            <div class="showcase-image-scrim"></div>
+            <div class="showcase-image-content">
+              <div class="showcase-image-badge">
+                <i class="fa-solid fa-trophy"></i>
+                <span>Quran Quiz Completed</span>
+              </div>
+              <h3>Alhamdulillah — A Proud Milestone</h3>
+              <p>Congratulations to my student for his hard work, dedication, and excellent performance on the Quran
+                Quiz. May Allah keep him motivated and always grant him success. Ameen.</p>
+            </div>
+          </div>
+          <div class="ach-side" data-stagger>
+            <div class="ach-mini" data-stagger-item>
+              <div class="ach-mini-top"><span>Milestone</span><span>Completed</span></div>
+              <h4>Quran Quiz Certificate</h4>
+              <p>Student completed the full Quran Quiz assessment with excellent results, demonstrating mastery of
+                recitation, Tajweed, and understanding.</p>
+            </div>
+            <div class="ach-mini" data-stagger-item>
+              <div class="ach-mini-top"><span>Teaching Approach</span><span>Personalized</span></div>
+              <h4>1-on-1 Focused Instruction</h4>
+              <p>Every student receives individualized attention, custom pacing, and genuine encouragement to build
+                lasting confidence.</p>
+            </div>
+            <div class="ach-mini" data-stagger-item>
+              <div class="ach-mini-top"><span>Recognition</span><span>Celebrated</span></div>
+              <h4>Achievements Honored</h4>
+              <p>Each milestone is celebrated with the student and family — because progress deserves recognition and
+                gratitude.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="services-section bg-surface-alt" id="testimonials">
+      <div class="container">
+        <div class="approach-header">
+          <span class="section-eyebrow reveal-line"><span>Student Testimonials</span></span>
+          <h2 class="section-heading reveal-line"><span>Trusted Guidance, Meaningful Learning</span></h2>
+          <p class="section-lead" data-fade>Discover how structured Quran learning, personalized guidance, and a focus
+            on Tajweed can support a meaningful learning journey.</p>
+        </div>
+        <div class="testimonials-grid" data-stagger>
+          <article class="testimonial-card" data-stagger-item>
+            <div>
+              <i class="fa-solid fa-quote-left quote-icon"></i>
+              <p>"Rauf Sajjad explains each lesson with patience and clarity. His supportive teaching approach makes
+                learning Quran recitation easier to follow and understand."</p>
+            </div>
+            <div><span class="testimonial-author">Student Review</span><span class="testimonial-meta">Quran
+                Recitation</span></div>
+          </article>
+          <article class="testimonial-card" data-stagger-item>
+            <div>
+              <i class="fa-solid fa-quote-left quote-icon"></i>
+              <p>"His focus on Tajweed rules and correct pronunciation provides a structured approach to Quran learning.
+                Each lesson encourages careful practice and improvement."</p>
+            </div>
+            <div><span class="testimonial-author">Student Review</span><span class="testimonial-meta">Tajweed &
+                Pronunciation</span></div>
+          </article>
+          <article class="testimonial-card" data-stagger-item>
+            <div>
+              <i class="fa-solid fa-quote-left quote-icon"></i>
+              <p>"Rauf Sajjad creates a respectful learning environment and gives attention to individual learning
+                needs. His guidance helps students approach every lesson with greater confidence."</p>
+            </div>
+            <div><span class="testimonial-author">Parent Review</span><span class="testimonial-meta">Quran Learning &
+                Guidance</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CLASSROOM -->
+    <section class="about-section">
+      <div class="container">
+        <div class="classroom-grid">
+          <div data-classroom="left">
+            <span class="section-eyebrow reveal-line"><span>Class Structure</span></span>
+            <h2 class="section-heading reveal-line"><span>Learn From Wherever You Are</span></h2>
+            <p class="section-lead" data-fade>Online sanctuary configured to provide an uninterrupted, high-definition
+              classroom experience. Screen-shared digital Mushaf pages, dual audio monitoring, and annotated whiteboards
+              give students the exact feel of a private traditional halaqah from the comfort of their home.</p>
+            <div class="classroom-features" data-stagger>
+              <div class="classroom-feature" data-stagger-item><i class="fa-solid fa-circle-check"></i><span>Private,
+                  100% focused one-on-one attention</span></div>
+              <div class="classroom-feature" data-stagger-item><i class="fa-solid fa-circle-check"></i><span>Recorded
+                  session recitations for home review</span></div>
+              <div class="classroom-feature" data-stagger-item><i class="fa-solid fa-circle-check"></i><span>No
+                  long-term commitments required</span></div>
+            </div>
+          </div>
+          <div class="classroom-cards" data-stagger>
+            <div class="classroom-card" data-stagger-item>
+              <div class="classroom-icon"><i class="fa-regular fa-clock"></i></div>
+              <h4>Lesson Duration</h4>
+              <p>Choose from 30, 45, or 60-minute sessions suited to child attention spans or intensive adult study.</p>
+              <small>Recommended: 45 min</small>
+            </div>
+            <div class="classroom-card" data-stagger-item>
+              <div class="classroom-icon"><i class="fa-solid fa-globe"></i></div>
+              <h4>Global Schedules</h4>
+              <p>Morning, afternoon, and evening slots coordinated for US, UK, European, and Gulf timezones.</p>
+              <small>7 Days Available</small>
+            </div>
+            <div class="classroom-card" data-stagger-item>
+              <div class="classroom-icon"><i class="fa-solid fa-laptop"></i></div>
+              <h4>Live Platforms</h4>
+              <p>Seamless lessons hosted via Zoom or WhatsApp video call with digital Quran overlays and crystal-clear
+                audio.</p>
+              <small>Desktop / Tablet / Phone</small>
+            </div>
+            <div class="classroom-card" data-stagger-item>
+              <div class="classroom-icon"><i class="fa-solid fa-gift"></i></div>
+              <h4>Free Trial Session</h4>
+              <p>A complimentary 30-minute evaluation to assess student level, discuss goals, and experience the
+                teaching style.</p>
+              <small>100% Complimentary</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="services-section bg-surface-alt">
+      <div class="faq-container">
+        <div class="faq-header">
+          <span class="section-eyebrow reveal-line"><span>Clarifications</span></span>
+          <h2 class="section-heading reveal-line"><span>Frequently Asked Questions</span></h2>
+          <p class="section-lead" data-fade>Answers regarding our trial class, beginner readiness, class setups, and
+            parental monitoring.</p>
+        </div>
+        <div data-stagger>
+          <div class="faq-item" data-stagger-item>
+            <button class="faq-trigger" data-faq-toggle aria-expanded="false" type="button">
+              <span>Are lessons suitable for complete beginners who do not know the Arabic alphabet?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="faq-content" hidden>Yes, absolutely. A significant portion of my students start from the very
+              beginning. We utilize the proven Noorani Qaida method to introduce letters, phonetic exit points
+              (Makharij), and vowels step-by-step in an unhurried, encouraging environment.</div>
+          </div>
+          <div class="faq-item" data-stagger-item>
+            <button class="faq-trigger" data-faq-toggle aria-expanded="false" type="button">
+              <span>Are the lessons held strictly one-on-one, or in groups?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="faq-content" hidden>All primary Quran lessons are strictly 1-to-1. Reciting the Holy Quran
+              requires delicate vocal observation and real-time correction of tongue placement, which is best achieved
+              when the teacher's full attention is devoted to a single student.</div>
+          </div>
+          <div class="faq-item" data-stagger-item>
+            <button class="faq-trigger" data-faq-toggle aria-expanded="false" type="button">
+              <span>What happens during the Free Trial Class?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="faq-content" hidden>The free trial lasts approximately 30 minutes. We introduce ourselves,
+              evaluate your current reading fluency or Arabic background, sample a short practical recitation, and
+              discuss your personal or your child's weekly study goals. There is zero obligation to enroll.</div>
+          </div>
+          <div class="faq-item" data-stagger-item>
+            <button class="faq-trigger" data-faq-toggle aria-expanded="false" type="button">
+              <span>How do parents stay informed on their child's progress?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="faq-content" hidden>Parents receive short updates after weekly sessions via WhatsApp or email,
+              noting new verses learned, areas for home revision, and Tajweed milestones achieved. Parents are also
+              always welcome to sit in quietly on sessions.</div>
+          </div>
+          <div class="faq-item" data-stagger-item>
+            <button class="faq-trigger" data-faq-toggle aria-expanded="false" type="button">
+              <span>What software or equipment is required?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="faq-content" hidden>All you need is a computer, laptop, or tablet with a stable internet
+              connection, a webcam, and standard headphones or earphones. We supply digital Mushafs, workbooks, and
+              learning sheets directly through the shared screen.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOOKING — CONTACT ICONS REMOVED -->
+    <section id="booking-form" class="booking-section">
+      <div class="booking-pattern">
+        <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <defs>
+            <pattern id="grid-pattern" width="60" height="60" patternUnits="userSpaceOnUse">
+              <circle cx="30" cy="30" fill="#ba9b5c" r="1"></circle>
+            </pattern>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#grid-pattern)"></rect>
+        </svg>
+      </div>
+      <div class="container">
+        <div class="booking-grid">
+          <div data-booking="left">
+            <div class="booking-eyebrow"><span>Start Today</span></div>
+            <h2 class="booking-heading reveal-line"><span>Begin Your Quran Learning Journey</span></h2>
+            <p class="booking-copy" data-fade>Have a question or want to explore a suitable learning plan? Get in touch
+              to schedule your free, no-obligation trial assessment session.</p>
+
+            <!-- Clean contact list — no icons -->
+            <div class="contact-list" data-stagger>
+              <div class="contact-item" data-stagger-item>
+                <small>Direct WhatsApp</small>
+                <a href="https://wa.me/923283126989" target="_blank" rel="noopener noreferrer">+92 328 3126989</a>
+              </div>
+              <div class="contact-item" data-stagger-item>
+                <small>Email Inquiries</small>
+                <a href="mailto:quranhouseof@gmail.com">quranhouseof@gmail.com</a>
+              </div>
+              <div class="contact-item" data-stagger-item>
+                <small>Teaching Hours</small>
+                <span>Open 7 days — flexible slots</span>
+              </div>
+              <div class="contact-item" data-stagger-item>
+                <small>Instagram</small>
+                <a href="https://www.instagram.com/houseoffquran/" target="_blank" rel="noopener noreferrer">Instagram</a>
+              </div>
+            </div>
+
+            <div class="trial-box" data-fade>
+              <div class="trial-box-head">
+                <i class="fa-solid fa-circle-check"></i>
+                <strong>Free Trial Class</strong>
+              </div>
+              <p>A complimentary 30-minute evaluation session — assess your current level, discuss personal goals, and
+                experience the teaching style. Zero obligation to enroll.</p>
+            </div>
+          </div>
+          <div class="booking-form-card" data-booking="form">
+            <h3>Request a Free Trial Lesson</h3>
+            <p>Fill in your details below and Rauf Sajjad will connect within 24 hours.</p>
+            <form id="trial-form">
+              <div class="form-group">
+                <label class="form-label" for="full-name">Full Name *</label>
+                <input class="form-input" id="full-name" placeholder="e.g. Tariq Khan" required type="text" />
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="email">Email Address *</label>
+                  <input class="form-input" id="email" placeholder="name@example.com" required type="email" />
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="whatsapp">WhatsApp Number *</label>
+                  <input class="form-input" id="whatsapp" placeholder="Your WhatsApp number" required type="tel" />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="age-group">Student Age Group</label>
+                  <select class="form-input" id="age-group">
+                    <option value="child">Child (Ages 6 – 12)</option>
+                    <option value="teen">Teenager (Ages 13 – 18)</option>
+                    <option selected value="adult">Adult Learner</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="course">Preferred Learning Path</label>
+                  <select class="form-input" id="course">
+                    <option value="noorani">Noorani Qaida (Beginner Phonetics)</option>
+                    <option value="reading">Quran Reading &amp; Fluency</option>
+                    <option selected value="tajweed">Tajweed Mastery &amp; Rules</option>
+                    <option value="hifz">Quran Memorization (Hifz)</option>
+                    <option value="arabic">Quranic Arabic &amp; Meaning</option>
+                    <option value="islamic-studies">Islamic Studies &amp; Adab</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="timing">Preferred Class Time</label>
+                  <select class="form-input" id="timing">
+                    <option value="morning">Morning (8 AM – 12 PM)</option>
+                    <option value="afternoon">Afternoon (12 PM – 5 PM)</option>
+                    <option selected value="evening">Evening (5 PM – 9 PM)</option>
+                    <option value="weekend">Weekends Only</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="format">Class Format</label>
+                  <select class="form-input" id="format">
+                    <option selected value="online-1on1">Online 1-on-1 (Zoom / WhatsApp)</option>
+                    <option value="in-person">In-person (if available)</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="notes">Recitation Background or Notes</label>
+                <textarea class="form-input" id="notes"
+                  placeholder="Briefly describe past reading experience, student goals, or any specific questions..."
+                  rows="3"></textarea>
+              </div>
+              <button class="form-submit" type="submit">
+                <span>Request a Free Trial Class</span>
+                <i class="fa-regular fa-calendar-check"></i>
+              </button>
+              <div class="form-success" id="form-success-banner" hidden>
+                WhatsApp will open with your request pre-filled. Review the message and send it to Rauf Sajjad.
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER — FONT AWESOME ICONS -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand-head">
+            <strong>Rauf Sajjad</strong>
+            <span>Quran Teacher</span>
+          </div>
+          <p>Certified Quran teacher with Ijazah &amp; Sanad, 5+ years experience, and 100+ students taught across USA,
+            UK, and Gulf countries. Teaching Tajweed, Hifz, Noorani Qaida, and Quranic Arabic with personalized 1-on-1
+            instruction.</p>
+          <div class="footer-arabic">الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ</div>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Educator</a></li>
+            <li><a href="#experience">Teaching Journey</a></li>
+            <li><a href="#qualifications">Ijazah &amp; Credentials</a></li>
+            <li><a href="#gallery">Recognition Gallery</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Curriculum</h4>
+          <ul>
+            <li><a href="#services">Tajweed Foundations</a></li>
+            <li><a href="#services">Hifdh Mentorship</a></li>
+            <li><a href="#services">Tafseer &amp; Arabic Roots</a></li>
+            <li><a href="#services">Ijazah Certification</a></li>
+            <li><a href="#booking-form">Trial Assessment</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Direct Inquiries</h4>
+          <ul>
+            <li>
+              <i class="fa-brands fa-whatsapp"></i>
+              <a href="https://wa.me/923283126989" target="_blank" rel="noopener noreferrer">+92 328 3126989</a>
+            </li>
+            <li>
+              <i class="fa-regular fa-envelope"></i>
+              <a href="mailto:quranhouseof@gmail.com">quranhouseof@gmail.com</a>
+            </li>
+            <li>
+              <i class="fa-regular fa-clock"></i>
+              <span>US / UK / Europe / Gulf timezones</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Global Online (Remote)</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-divider">
+        <div class="footer-divider-symbols">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-regular fa-gem"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Rauf Sajjad. All rights reserved. Dedicated to Quranic excellence.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a><span>•</span>
+          <a href="#">Terms of Instruction</a><span>•</span>
+          <a href="#">Academic Sanad Record</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX SLIDER -->
+  <div id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <div class="lightbox-content">
+      <span class="lightbox-counter" id="lightbox-counter">1 / 1</span>
+      <button class="lightbox-close" aria-label="Close lightbox">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <button class="lightbox-nav lightbox-nav--prev" aria-label="Previous image">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+      <button class="lightbox-nav lightbox-nav--next" aria-label="Next image">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
+      <div class="lightbox-image-wrap">
+        <img src="" alt="" id="lightbox-img" />
+      </div>
+      <div class="lightbox-caption">
+        <h4 id="lightbox-title"></h4>
+        <small id="lightbox-meta"></small>
+      </div>
+    </div>
+  </div>
+
+  <!-- GSAP + ScrollTrigger -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <!-- LENIS -->
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
